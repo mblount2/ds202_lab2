@@ -1,9 +1,11 @@
 ---
 title: 'DS 202 - Lab 2: Exploring Chocolates'
 subtitle: "Due: Thursday 09/19/2019 by 10 pm"
-author: "Mikaela Blount"
+author: "Mikaela Blount and Jaden Birkner"
 date: "09/12/2019"
 output: html_document
+editor_options: 
+  chunk_output_type: inline
 ---
 
 
@@ -118,7 +120,10 @@ plot(germany_recent$Cocoa.Pct ~ germany_recent$Review.Date,ylim=c(50,90),col=col
 legend('bottomright',legend=c('High Rating', 'Low Rating'),col=c('orange','yellow'),pch=18)
 ```
 
-2 \. Click Zoom on the Rstudio window (under Plots) to see the plot more clearly. How do you think the plot produced from the code above can be improved? Recommend at least one possible improvement. 
+2 \. Click Zoom on the Rstudio window (under Plots) to see the plot more clearly. How do you think the plot produced from the code above can be improved? Recommend at least one possible improvement.
+
+The plots are small and could be enlarged so that the information is easier to read. The key in the bottom left corner may be obsructing some data points and should be moved.
+
 
 3 \. How does the **number** of ratings (not the actual value of the rating) depend on the year? Use graphics to answer this question.
 ```{r}
@@ -150,6 +155,8 @@ boxplot(usaFrCan$Rating~usaFrCan$Company.Location)
 
 
 5 \. Brainstorm and write down an interesting question that can be answer from the dataset. The question should not duplicate the questions above.
+
+Is there a correlation between broad bean origin and rating?
 
 6 \. Bonus points (optional): Answer the question from the dataset.
 
